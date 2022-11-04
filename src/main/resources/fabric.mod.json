@@ -1,0 +1,32 @@
+{
+  "schemaVersion": 1,
+  "id": "huell_client",
+  "version": "${version}",
+  "name": "Huell Client",
+  "description": "Huell Client",
+  "authors": [
+    "rebot333"
+  ],
+  "contact": {
+    "website": "rebot333.com"
+  },
+  "license": "MIT",
+  "icon": "assets/huell_client/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+    ],
+    "client": [
+      "com.rebot333.huellclient.HuellClient"
+    ]
+  },
+  "mixins": [
+    "huell_client.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=0.14.10",
+    "fabric-api": "*",
+    "minecraft": "~1.19",
+    "java": ">=17"
+  }
+}

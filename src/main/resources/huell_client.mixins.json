@@ -1,0 +1,23 @@
+{
+  "required": true,
+  "minVersion": "0.8",
+  "package": "com.rebot333.huellclient.mixin",
+  "compatibilityLevel": "JAVA_17",
+  "mixins": [
+    "PlayerEntityMixin",
+    "LivingEntityMixin",
+    "ClientPlayerEntityMixin",
+    "PlayerMoveC2SPacketMixin",
+    "BlockMixin",
+    "AbstractBlockStateMixin",
+    "EntityMixin"
+  ],
+  "client": [
+    "ClientWorldMixin",
+    "PlayerEntityRendererMixin",
+    "CameraMixin"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}
